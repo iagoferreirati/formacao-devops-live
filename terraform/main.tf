@@ -30,7 +30,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = "api_via_cep"
   }
-  iam_instance_profile = "ec2-role"
   key_name             = "curso"
 }
 

@@ -9,17 +9,10 @@
 		"secret_key": "{{user `AWS_SECRET_ACCESS_KEY`}}",
 		"region": "us-east-1",
 		"source_ami": "ami-0c4f7023847b90238",
-		"instance_type": "t3.micro",
+		"instance_type": "t2.micro",
 		"ssh_username": "ubuntu",
 		"ami_name": "packer-api-cep",
     "force_deregister": true,
-    "subnet_filter": {
-      "filters": {
-        "tag:Class": "build"
-      },
-      "most_free": true,
-      "random": false
-    },
     "force_delete_snapshot": true
     }],
     "provisioners": [

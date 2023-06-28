@@ -32,5 +32,5 @@ jobs:
       run: |
         cd terraform
         terraform init
-        terraform plan -destroy -out plan.tf
+        terraform plan -out plan.tf
         terraform apply -auto-approve plan.tf
